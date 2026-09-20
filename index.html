@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Sharon Markowitz | Partner & Product Marketing Leader</title>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QCX3G9KSPC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QCX3G9KSPC');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #FFFFFF;
+      --text: #111111;
+      --muted: #696969;
+      --accent: #1B4332;
+      --tile: #141414;
+      --tile-text: #FFFFFF;
+      --tile-sub: rgba(255,255,255,0.45);
+      --tile-body: rgba(255,255,255,0.82);
+      --rule: #E8E8E8;
+      --serif: 'Cormorant Garamond', Georgia, serif;
+      --sans: 'Inter', -apple-system, sans-serif;
+      --max: 880px;
+      padding-top: env(safe-area-inset-top, 0px);
+      padding-bottom: env(safe-area-inset-bottom, 0px);
+    }
+
+    html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+
+    body {
+      font-family: var(--sans);
+      font-size: 17px;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Nav */
+    nav {
+      position: sticky;
+      top: env(safe-area-inset-top, 0px);
+      z-index: 100;
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--rule);
+      padding: 16px 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-name {
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .nav-links { display: flex; gap: 16px; align-items: center; flex-wrap: nowrap; }
+
+    .nav-link {
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .nav-link:hover { color: var(--accent); }
+
+    .nav-cta {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    /* Layout */
+    .wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    .sect {
+      padding: 80px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    /* Hero */
+    .hero { padding: 96px 0 88px; border-bottom: 1px solid var(--rule); }
+
+    .hero-eyebrow {
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-family: var(--serif);
+      font-size: clamp(3.8rem, 10vw, 6.5rem);
+      font-weight: 600;
+      line-height: 0.95;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 32px;
+    }
+
+    .hero-divider {
+      width: 32px;
+      height: 2px;
+      background: var(--accent);
+      margin-bottom: 28px;
+    }
+
+    .hero-bio {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: var(--text);
+      max-width: 580px;
+      font-weight: 300;
+      margin-bottom: 36px;
+    }
+
+    .hero-bio p + p { margin-top: 14px; }
+
+    .hero-throughline {
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--muted);
+      margin-bottom: 24px;
+      letter-spacing: 0.01em;
+    }
+
+
+    .hero-throughline {
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--muted);
+      margin-bottom: 12px;
+      letter-spacing: 0.01em;
+    }
+
+    /* Traits */
+    .hero-traits {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .trait {
+      font-size: 0.82rem;
+      font-weight: 400;
+      color: var(--text);
+      background: #F0EDE8;
+      padding: 6px 12px;
+      letter-spacing: 0.01em;
+      border-left: 2px solid var(--accent);
+    }
+
+    /* Recognition */
+    .hero-recognition {
+      font-size: 0.8rem;
+      font-weight: 400;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+      margin-bottom: 0;
+    }
+
+    .hero-link {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid var(--accent);
+      padding-bottom: 2px;
+      transition: opacity 0.15s;
+    }
+
+    .hero-link:hover { opacity: 0.7; }
+
+    /* How I Work */
+    .sect-eyebrow {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      font-family: var(--serif);
+      font-size: clamp(1.9rem, 4.5vw, 2.6rem);
+      font-weight: 600;
+      line-height: 1.1;
+      color: var(--text);
+      margin-bottom: 48px;
+    }
+
+    .principles {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px 56px;
+    }
+
+    .principle-name {
+      font-family: var(--serif);
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 8px;
+      line-height: 1.2;
+    }
+
+    .principle-body {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--muted);
+      font-weight: 300;
+    }
+
+    /* Company header */
+    .company-header { margin-bottom: 32px; }
+
+    h3.company {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      font-weight: 600;
+      line-height: 1.05;
+      color: var(--text);
+      margin-bottom: 10px;
+    }
+
+    .company-desc {
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 560px;
+      line-height: 1.72;
+      font-weight: 300;
+    }
+
+    /* Tile grids */
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .grid-3 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .grid-3 .tile:last-child:nth-child(odd) { grid-column: 1 / -1; }
+    .grid-1 { display: grid; grid-template-columns: 1fr; gap: 12px; }
+
+    /* Tile */
+    .tile {
+      background: var(--tile);
+      cursor: pointer;
+      transition: background 0.18s;
+    }
+
+    .tile:hover { background: #1E1E1E; }
+
+    .tile-front {
+      padding: 28px 24px 22px;
+      min-height: 220px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* Metric hero */
+    .tile-metric {
+      font-family: var(--serif);
+      font-size: clamp(2.4rem, 5vw, 3.2rem);
+      font-weight: 600;
+      color: var(--tile-text);
+      line-height: 1.0;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+    }
+
+    .tile-metric-label {
+      font-size: 0.85rem;
+      font-weight: 400;
+      color: var(--tile-sub);
+      margin-bottom: 18px;
+      line-height: 1.4;
+    }
+
+    .tile-hook {
+      font-size: 0.88rem;
+      font-weight: 300;
+      line-height: 1.55;
+      color: rgba(255,255,255,0.65);
+      margin-bottom: 24px;
+      flex: 1;
+    }
+
+    .tile-foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 12px;
+    }
+
+    .tile-meta {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--tile-sub);
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+    }
+
+    .tile-btn {
+      width: 28px;
+      height: 28px;
+      border: 1px solid rgba(255,255,255,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.55);
+      flex-shrink: 0;
+      transition: border-color 0.15s, color 0.15s, transform 0.25s;
+    }
+
+    .tile.open .tile-btn {
+      transform: rotate(45deg);
+      color: var(--tile-text);
+      border-color: rgba(255,255,255,0.5);
+    }
+
+    /* Expanded card */
+    .tile-body {
+      display: none;
+      padding: 24px;
+      background: #1A1A1A;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .tile.open .tile-body { display: block; }
+
+    .card-row { margin-bottom: 18px; }
+    .card-row:last-of-type { margin-bottom: 0; }
+
+    .card-label {
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: rgba(255,255,255,0.4);
+      letter-spacing: 0.05em;
+      margin-bottom: 5px;
+    }
+
+    .card-text {
+      font-size: 1rem;
+      line-height: 1.68;
+      color: var(--tile-body);
+      font-weight: 300;
+    }
+
+    .card-message {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 1.15rem;
+      color: var(--tile-text);
+      line-height: 1.5;
+    }
+
+    .card-result {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--tile-text);
+      line-height: 1.4;
+    }
+
+    .card-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 22px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .card-link {
+      font-size: 0.8rem;
+      font-weight: 400;
+      color: rgba(255,255,255,0.55);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      padding-bottom: 1px;
+      transition: color 0.15s, border-color 0.15s;
+    }
+
+    .card-link:hover { color: var(--tile-text); border-color: rgba(255,255,255,0.6); }
+
+    /* Recognition */
+    .recog-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .article-list { margin-bottom: 12px; }
+
+    .recog-tile {
+      background: #F5F5F5;
+      padding: 28px 24px;
+    }
+
+    .recog-org {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+
+    .recog-role {
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--muted);
+      margin-bottom: 18px;
+      letter-spacing: 0.02em;
+    }
+
+    .recog-links { display: flex; flex-direction: column; gap: 8px; }
+
+    .recog-link {
+      font-size: 0.85rem;
+      font-weight: 400;
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      padding-bottom: 1px;
+      width: fit-content;
+      transition: border-color 0.15s;
+    }
+
+    .recog-link:hover { border-bottom-color: var(--accent); }
+
+    /* Thought Leadership */
+    .tl-grid {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .tl-grid .recog-tile {
+      margin-bottom: 0;
+    }
+
+    .tl-grid .recog-grid-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 0;
+    }
+
+    a.article-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+      border-top: 1px solid var(--rule);
+      padding: 14px 0;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    a.article-row:last-child { border-bottom: 1px solid var(--rule); }
+    a.article-row:hover .ar-title { color: var(--accent); }
+
+    .ar-title {
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: var(--text);
+      transition: color 0.15s;
+      line-height: 1.4;
+    }
+
+    .ar-type {
+      font-size: 0.7rem;
+      color: var(--muted);
+      white-space: nowrap;
+      font-weight: 300;
+    }
+
+    /* Podcast tiles */
+    .pod-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .pod-tile {
+      background: var(--tile);
+      padding: 28px 24px;
+      text-decoration: none;
+      display: block;
+      transition: background 0.18s;
+    }
+
+    .pod-tile:hover { background: #1E1E1E; }
+
+    .pod-show {
+      font-family: var(--serif);
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--tile-text);
+      margin-bottom: 6px;
+      line-height: 1.2;
+    }
+
+    .pod-host {
+      font-size: 0.75rem;
+      color: var(--tile-sub);
+      margin-bottom: 18px;
+      font-weight: 300;
+    }
+
+    .pod-desc {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.55;
+      font-weight: 300;
+      margin-bottom: 20px;
+    }
+
+    .pod-listen {
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: rgba(255,255,255,0.45);
+      letter-spacing: 0.04em;
+    }
+
+    /* Connect */
+    .connect-head {
+      font-family: var(--serif);
+      font-size: clamp(1.8rem, 4vw, 2.4rem);
+      font-weight: 500;
+      line-height: 1.3;
+      margin-bottom: 28px;
+      max-width: 440px;
+    }
+
+    .connect-btn {
+      display: inline-block;
+      background: var(--text);
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 500;
+      padding: 13px 26px;
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+
+    .connect-btn:hover { background: var(--accent); }
+
+    /* Mobile */
+
+    /* Writing */
+    .tl-list { display: flex; flex-direction: column; }
+
+    a.tl-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+      border-top: 1px solid var(--rule);
+      padding: 15px 0;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    a.tl-row:last-child { border-bottom: 1px solid var(--rule); }
+    a.tl-row:hover .tl-title { color: var(--accent); }
+
+    .tl-title {
+      font-size: 1.05rem;
+      font-weight: 400;
+      color: var(--text);
+      transition: color 0.15s;
+      line-height: 1.4;
+    }
+
+    .tl-type {
+      font-size: 0.82rem;
+      color: var(--muted);
+      white-space: nowrap;
+      font-weight: 300;
+    }
+
+    /* Thought Leadership (legacy) */
+    .tl-block { display: flex; flex-direction: column; }
+
+    .tl-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 0;
+    }
+
+    .tl-recog {
+      background: #F5F5F5;
+      padding: 24px;
+    }
+
+    .tl-recog-name {
+      font-family: var(--serif);
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 3px;
+    }
+
+    .tl-recog-role {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-bottom: 14px;
+      font-weight: 400;
+    }
+
+    .tl-links { display: flex; flex-direction: column; gap: 7px; }
+
+    .tl-link {
+      font-size: 0.82rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 400;
+      width: fit-content;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+
+    .tl-link:hover { border-bottom-color: var(--accent); }
+
+    a.tl-article {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+      border-top: 1px solid var(--rule);
+      padding: 13px 0;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    a.tl-article:last-of-type { border-bottom: 1px solid var(--rule); }
+    a.tl-article:hover .tl-article-title { color: var(--accent); }
+
+    .tl-article-title {
+      font-size: 1.05rem;
+      font-weight: 400;
+      color: var(--text);
+      transition: color 0.15s;
+    }
+
+    .tl-article-type {
+      font-size: 0.82rem;
+      color: var(--muted);
+      white-space: nowrap;
+      font-weight: 300;
+    }
+
+    .tl-pod-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    a.tl-pod {
+      background: var(--tile);
+      padding: 24px;
+      text-decoration: none;
+      display: block;
+      transition: background 0.18s;
+    }
+
+    a.tl-pod:hover { background: #1E1E1E; }
+
+    .tl-pod-show {
+      font-family: var(--serif);
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--tile-text);
+      margin-bottom: 4px;
+      line-height: 1.2;
+    }
+
+    .tl-pod-host {
+      font-size: 0.85rem;
+      color: var(--tile-sub);
+      margin-bottom: 16px;
+      font-weight: 300;
+    }
+
+    .tl-pod-listen {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: rgba(255,255,255,0.45);
+      letter-spacing: 0.03em;
+    }
+
+
+    /* Footer */
+    .site-footer {
+      border-top: 1px solid var(--rule);
+      padding: 28px 0;
+      margin-top: 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-name {
+      font-size: 0.85rem;
+      font-weight: 400;
+      color: var(--muted);
+    }
+
+    .footer-li {
+      font-size: 0.85rem;
+      font-weight: 400;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .footer-li:hover { color: var(--accent); }
+
+    @media (max-width: 600px) {
+      .tl-row, .tl-pod-row { grid-template-columns: 1fr; }
+      .grid-2, .grid-3, .recog-grid, .pod-grid { grid-template-columns: 1fr; }
+      .grid-3 .tile:last-child:nth-child(odd) { grid-column: auto; }
+      .principles { grid-template-columns: 1fr; gap: 28px; }
+      .hero { padding: 56px 0 64px; }
+      .sect { padding: 56px 0; }
+      nav { padding: 12px 16px; }
+      .nav-name { font-size: 0.82rem; }
+      .nav-link { font-size: 0.72rem; }
+      .nav-cta { font-size: 0.72rem; }
+      .nav-links { gap: 12px; }
+      .nav-link { font-size: 0.75rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <span class="nav-name">Sharon Markowitz</span>
+  <div class="nav-links">
+    <a href="#work" class="nav-link">Work</a>
+    <a href="#thought-leadership" class="nav-link">Writing</a>
+    <a href="https://linkedin.com/in/sharonmarkowitz" class="nav-cta" target="_blank">LinkedIn</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="wrap">
+  <div class="hero">
+    <p class="hero-eyebrow">Partner & Product Marketing Leader</p>
+    <h1>Sharon<br>Markowitz</h1>
+    <div class="hero-divider"></div>
+    <div class="hero-bio">
+      <p>Product and partner marketing leader with 15+ years in B2B SaaS, from Series B to public companies. The common thread across all of it: starting with the customer, working across product, sales, field, and partners to find what's blocking growth, and translating that into programs and field motion that drive results. AI practitioner since LinkedIn, from Zoom's first AI app bundle to sales enablement at Intuit.</p>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- ZOOM -->
+<div class="wrap" id="work">
+  <section class="sect">
+    <p class="sect-eyebrow">Work</p>
+    <div class="company-header">
+      <h3 class="company">Zoom</h3>
+      <p class="company-desc">Built the App Marketplace GTM function from zero across a 2,000+ integration ecosystem as Zoom expanded from a meetings platform to a full communication and collaboration platform.</p>
+    </div>
+
+    <div class="grid-2">
+
+      <div class="tile" onclick="toggleTile(this)">
+        <div class="tile-front">
+          <div>
+            <p class="tile-metric">$7.2M</p>
+            <p class="tile-metric-label">net-new partner ARR</p>
+            <p class="tile-hook">Turned product gaps into closed deals across the Zoom platform</p>
+          </div>
+          <div class="tile-foot">
+            <span class="tile-meta">ISV GTM Program</span>
+            <span class="tile-btn">+</span>
+          </div>
+        </div>
+        <div class="tile-body">
+          <div class="card-row">
+            <p class="card-label">The problem</p>
+            <p class="card-text">As Zoom expanded beyond meetings, building out its communication and collaboration platform, gaps in the product were blocking sales deals. Win/loss data told me where and why.</p>
+          </div>
+          <div class="card-row">
+            <p class="card-label">What I built</p>
+            <p class="card-text">I identified which gaps ISV partners could close, then built the messaging, field toolkit, and co-sell motion, working across BD, product, field sales, and CSMs, to turn stalled deals into closed ones.</p>
+          </div>
+          <div class="card-row">
+            <p class="card-label">The message</p>
+            <p class="card-message">"One vendor, one contract, one workflow."</p>
+          </div>
+          <div class="card-row">
+            <p class="card-label">The result</p>
+            <p class="card-result">Program delivered $7.2M in net-new partner ARR</p>
+          </div>
+          <div class="card-links">
+            <a href="https://www.zoom.com/en/blog/save-time-with-faxsipit/" class="card-link" target="_blank">Blog</a>
+            <a href="https://partner.zoom.com/solutions/faxsipit/" class="card-link" target="_blank">Partner Page</a>
+            <a href="https://marketplace.zoom.us/apps/xhHY2U2nSTqunKTMMsCJGg" class="card-link" target="_blank">App Marketplace</a>
+            <a href="https://open.spotify.com/episode/5gM2VLZeCIpbtdz4jJaAVN" class="card-link" target="_blank">Podcast</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tile" onclick="toggleTile(this)">
+        <div class="tile-front">
+          <div>
+            <p class="tile-metric">+15%</p>
+            <p class="tile-metric-label">SMB revenue growth</p>
+            <p class="tile-hook">Launched Zoom's first AI app bundle before AI was a selling point</p>
+          </div>
+          <div class="tile-foot">
+            <span class="tile-meta">1st AI App Bundle</span>
+            <span class="tile-btn">+</span>
+          </div>
+        </div>
+        <div class="tile-body">
+          <div class="card-row">
+            <p class="card-label">The problem</p>
+            <p class="card-text">Post-pandemic, free alternatives were eroding Zoom's SMB base. The answer wasn't price. It was value. SMB customers didn't know what Zoom could do for them beyond meetings.</p>
+          </div>
+          <div class="card-row">
+            <p class="card-label">What I built</p>
+            <p class="card-text">I curated Zoom's first AI productivity bundle, 8 apps across productivity, team engagement, and customer relationships, and built the positioning and GTM motion around it. The real work was figuring out how to talk about AI before it was a selling point. Not jargon. Position the outcome, not the technology.</p>
+          </div>
+          <div class="card-row">
+            <p class="card-label">The result</p>
+            <p class="card-result">Bundle drove +15% SMB revenue growth</p>
+          </div>
+          <div class="card-links">
+            <a href="https://www.zoom.com/en/zoom-apps/essential-app-bundle/" class="card-link" target="_blank">Essential Apps Page</a>
+            <a href="https://www.zoom.com/en/blog/zoom-curated-essential-apps/" class="card-link" target="_blank">Launch Blog</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+<!-- ATLASSIAN -->
+<div class="wrap">
+  <section class="sect">
+    <div class="company-header">
+      <h3 class="company">Atlassian</h3>
+      <p class="company-desc">Owned Tier 1 partner GTM: joint business planning, co-marketing, and field activation with AWS, Dropbox, and Adobe across Jira, Confluence, Jira Service Management, and Bitbucket.</p>
+    </div>
+
+    <div class="grid-2">
+
+      <div class="tile" onclick="toggleTile(this)">
+        <div class="tile-front">
+          <div>
+            <p class="tile-metric" style="font-size:clamp(1.4rem,3.5vw,2rem);letter-spacing:-0.01em;">Invite-only</p>
+            <p class="tile-metric-label">AWS DevOps vertical GTM access</p>
+            <p class="tile-hook">Built the joint GTM motion that unlocked AWS's DevOps vertical program</p>
+          </div>
+          <div class="tile-foot">
+            <span class="tile-meta">AWS Hyperscaler GTM</span>
+            <span class="tile-btn">+</span>
+          </div>
+        </div>
+        <div class="tile-body">
+          <div class="card-row">
+            <p class="card-label">The problem</p>
+            <p class="card-text">AWS and Atlassian measured success differently. Without aligning on both, the partnership would produce activity without impact.</p>
+          </div>
+          <div class="card-row">
+            <p class="card-label">What I built</p>
+            <p class="card-text">Built the relationship before any campaign, aligning both sides on strategy and where their goals connected. Identified one tactic from AWS's playbook and ran it in two weeks to validate the approach and the partnership's ability to work together.</p>
+          </div>
+          <div class="card-row">
+            <p class="card-label">The result</p>
+            <p class="card-result">Earned invite-only access to AWS's DevOps vertical GTM program</p>
+          </div>
+          <div class="card-links">
+            <a href="https://www.atlassian.com/partnerships/aws" class="card-link" target="_blank">Atlassian/AWS Page</a>
+            <a href="https://www.linkedin.com/pulse/partner-gtm-hyperscalers-lessons-from-aws-sharon-markowitz-krwee/" class="card-link" target="_blank">Hyperscaler Article</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tile" onclick="toggleTile(this)">
+        <div class="tile-front">
+          <div>
+            <p class="tile-metric">30%</p>
+            <p class="tile-metric-label">adoption target met</p>
+            <p class="tile-hook">Turned a product integration into a better together customer story</p>
+          </div>
+          <div class="tile-foot">
+            <span class="tile-meta">Dropbox Smart Links in Jira</span>
+            <span class="tile-btn">+</span>
+          </div>
+        </div>
+        <div class="tile-body">
+          <div class="card-row">
+            <p class="card-label">The problem</p>
+            <p class="card-text">Atlassian had a strong integration with Dropbox. Smart Links embedded Dropbox files directly into Jira and Confluence workflows. The technology existed. The customer story didn't.</p>
+          </div>
+          <div class="card-row">
+            <p class="card-label">What I built</p>
+            <p class="card-text">I led the GTM strategy for Smart Links, developing a "better together" narrative for both technical and business users, launching a multi-channel co-marketing campaign across content, web, email, and sales, and enabling both organizations on a consistent story to take to market.</p>
+          </div>
+          <div class="card-row">
+            <p class="card-label">The result</p>
+            <p class="card-result">Met 30% adoption target</p>
+          </div>
+          <div class="card-links">
+            <a href="https://community.atlassian.com/forums/App-Central-articles/Introducing-Smart-Links-for-Dropbox-in-Jira-Cloud-and-Confluence/ba-p/1386971" class="card-link" target="_blank">Launch Blog</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+<!-- LINKEDIN -->
+<div class="wrap">
+  <section class="sect">
+    <div class="company-header">
+      <h3 class="company">LinkedIn</h3>
+      <p class="company-desc">Led messaging and feature prioritization for LinkedIn's $3B Recruiter and Jobs portfolio, targeting CHROs and talent acquisition leaders globally.</p>
+    </div>
+
+    <div class="grid-1">
+      <div class="tile" onclick="toggleTile(this)">
+        <div class="tile-front">
+          <div>
+            <p class="tile-metric">+20%</p>
+            <p class="tile-metric-label">CSAT improvement</p>
+            <p class="tile-hook">Led messaging and feature prioritization for LinkedIn's first AI features, turning around a stalling $3B portfolio</p>
+          </div>
+          <div class="tile-foot">
+            <span class="tile-meta">Recruiter & Jobs repositioning</span>
+            <span class="tile-btn">+</span>
+          </div>
+        </div>
+        <div class="tile-body">
+          <div class="card-row">
+            <p class="card-label">The problem</p>
+            <p class="card-text">LinkedIn's Recruiter and Jobs portfolio wasn't gaining the expected traction. It wasn't until customer interviews and sales listening sessions that the messaging gap became clear.</p>
+          </div>
+          <div class="card-row">
+            <p class="card-label">What I built</p>
+            <p class="card-text">Led the messaging work and feature prioritization, simplifying the AI feature set from 6 to 4 based on what customers actually needed. Updated messaging was executed in market across sales and marketing.</p>
+          </div>
+          <div class="card-row">
+            <p class="card-label">The result</p>
+            <p class="card-result">+20% CSAT improvement</p>
+          </div>
+          <div class="card-links">
+            <a href="https://business.linkedin.com/talent-solutions/customer/new-recruiter-and-jobs" class="card-link" target="_blank">Launch Blog</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- INTUIT -->
+<div class="wrap">
+  <section class="sect">
+    <div class="company-header">
+      <h3 class="company">Intuit</h3>
+      <p class="company-desc">Two stints. Mountain View and Melbourne, Australia, leading global QuickBooks GTM across 5 countries. Returned in 2026 for the Accountant Suite launch.</p>
+    </div>
+
+    <div class="grid-3">
+
+      <div class="tile" onclick="toggleTile(this)">
+        <div class="tile-front">
+          <div>
+            <p class="tile-metric">+11%</p>
+            <p class="tile-metric-label">above adoption targets</p>
+            <p class="tile-hook">Launched a global category campaign still running today</p>
+          </div>
+          <div class="tile-foot">
+            <span class="tile-meta">Firm of the Future · QuickBooks</span>
+            <span class="tile-btn">+</span>
+          </div>
+        </div>
+        <div class="tile-body">
+          <div class="card-row">
+            <p class="card-label">The problem</p>
+            <p class="card-text">The accounting industry was moving from desktop to cloud and Intuit had to lead that shift globally. The challenge was taking a consistent message to market across 5 regions, each with different competitors and customer readiness.</p>
+          </div>
+          <div class="card-row">
+            <p class="card-label">What I built</p>
+            <p class="card-text">Developed the Firm of the Future messaging to meet accountants where they were in their adoption journey, enabling self-selection along the path to cloud. Tested the messaging with sales before launch, critical since they owned the customer relationship after. Built a campaign-in-a-box playbook regional teams could adapt without losing the core narrative.</p>
+          </div>
+          <div class="card-row">
+            <p class="card-label">The result</p>
+            <p class="card-result">11% above adoption targets globally · Campaign still running today</p>
+          </div>
+          <div class="card-links">
+            <a href="https://www.firmofthefuture.com/" class="card-link" target="_blank">Firm of the Future</a>
+            <a href="https://www.linkedin.com/pulse/local-strategies-regional-growth-think-global-act-sharon-markowitz-vvhie/" class="card-link" target="_blank">Think Global, Act Local</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tile" onclick="toggleTile(this)">
+        <div class="tile-front">
+          <div>
+            <p class="tile-metric">33%</p>
+            <p class="tile-metric-label">above plan</p>
+            <p class="tile-hook">Identified whitespace, built GTM from zero, landed the largest customer</p>
+          </div>
+          <div class="tile-foot">
+            <span class="tile-meta">Higher Ed GTM · QuickBooks</span>
+            <span class="tile-btn">+</span>
+          </div>
+        </div>
+        <div class="tile-body">
+          <div class="card-row">
+            <p class="card-label">The problem</p>
+            <p class="card-text">The education business was growing double digits but everything was ad hoc. The work was determining where to focus, the right messaging, distribution, and GTM to make it scalable.</p>
+          </div>
+          <div class="card-row">
+            <p class="card-label">What I built</p>
+            <p class="card-text">Identified where to focus, built the messaging, distribution strategy, and GTM to support it — across high school, vocational, and university buyers. Landed University of Phoenix as Intuit's largest education customer.</p>
+          </div>
+          <div class="card-row">
+            <p class="card-label">The result</p>
+            <p class="card-result">33% above plan · Acting Like an Owner award</p>
+          </div>
+          <div class="card-links">
+            <a href="https://insightfulaccountant.com/tax-and-practice-management/quickbooks-online-to-server-university-of-phoenix-accounting" class="card-link" target="_blank">University of Phoenix Partnership</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tile" onclick="toggleTile(this)">
+        <div class="tile-front">
+          <div>
+            <p class="tile-metric">8→22%</p>
+            <p class="tile-metric-label">beta adoption</p>
+            <p class="tile-hook">Built AI-powered enablement to support Accountant Suite adoption across different customer segments</p>
+          </div>
+          <div class="tile-foot">
+            <span class="tile-meta">Accountant Suite</span>
+            <span class="tile-btn">+</span>
+          </div>
+        </div>
+        <div class="tile-body">
+          <div class="card-row">
+            <p class="card-label">The problem</p>
+            <p class="card-text">Intuit's Accountant Suite was in beta with early adoption. The enablement motion was not in place for the different types of customers who needed to switch and adopt.</p>
+          </div>
+          <div class="card-row">
+            <p class="card-label">What I built</p>
+            <p class="card-text">Segment-specific messaging and migration assets tailored to where each firm was in their adoption journey, and an AI-powered sales toolkit built in NotebookLM consolidating pricing, positioning, and objection handling, reducing rep prep time and getting the right message to the right firm at the right moment.</p>
+          </div>
+          <div class="card-row">
+            <p class="card-label">The result</p>
+            <p class="card-result">8% to 22% beta adoption</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+<!-- THOUGHT LEADERSHIP -->
+<div class="wrap" id="thought-leadership">
+  <section class="sect">
+    <p class="sect-eyebrow">Thought Leadership</p>
+    <div class="tl-list">
+
+      <a href="https://www.productmarketingalliance.com/customer-advisory-boards-a-pmms-secret-weapon/" class="tl-row" target="_blank">
+        <span class="tl-title">Product Marketing Alliance — Customer Advisory Boards: A PMM's Secret Weapon</span>
+        <span class="tl-type">Article</span>
+      </a>
+      <a href="https://www.linkedin.com/pulse/partner-gtm-hyperscalers-lessons-from-aws-sharon-markowitz-krwee/" class="tl-row" target="_blank">
+        <span class="tl-title">Partner GTM with Hyperscalers: Lessons from AWS</span>
+        <span class="tl-type">Article</span>
+      </a>
+
+      <a href="https://www.linkedin.com/pulse/embrace-challenger-mindset-innovate-drive-results-sharon-markowitz-xv3te/" class="tl-row" target="_blank">
+        <span class="tl-title">Embrace the Challenger Mindset: Innovate and Drive Results</span>
+        <span class="tl-type">Article</span>
+      </a>
+      <a href="https://bit.ly/ai-humanagency" class="tl-row" target="_blank">
+        <span class="tl-title">AI Is Built on History and We Have Agency</span>
+        <span class="tl-type">Article</span>
+      </a>
+
+      <a href="https://open.spotify.com/episode/5gM2VLZeCIpbtdz4jJaAVN" class="tl-row" target="_blank">
+        <span class="tl-title">Product Marketing Adventures — How PMMs Influence Sales</span>
+        <span class="tl-type">Podcast</span>
+      </a>
+      <a href="https://www.youtube.com/live/DZ5m3J0BeNk" class="tl-row" target="_blank">
+        <span class="tl-title">The Partner Ship — Scaling Partner Marketing</span>
+        <span class="tl-type">Podcast</span>
+      </a>
+      <a href="https://sharebird.com/profile/sharon-markowitz" class="tl-row" target="_blank">
+        <span class="tl-title">Sharebird Top Product Marketing Mentor</span>
+        <span class="tl-type">AMAs</span>
+      </a>
+    </div>
+  </section>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span class="footer-name">© Sharon Markowitz</span>
+  </div>
+</footer>
+
+<script>
+  function toggleTile(tile) {
+    const isOpen = tile.classList.contains('open');
+    document.querySelectorAll('.tile.open').forEach(t => t.classList.remove('open'));
+    if (!isOpen) {
+      tile.classList.add('open');
+      setTimeout(() => {
+        tile.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }, 50);
+    }
+  }
+
+  const params = new URLSearchParams(window.location.search);
+  const ref = params.get('ref');
+  if (ref && typeof gtag !== 'undefined') {
+    gtag('event', 'portfolio_visit', { source: ref });
+  }
+</script>
+
+</body>
+</html>
